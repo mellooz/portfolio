@@ -1,0 +1,134 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ahmed Emad</title>
+	<link href="{% static '/css/main.css'  %}" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+</head>
+<body>
+	<!-- ################################################################### -->
+
+	    {% include 'base/navbar.html' %}
+
+	<!-- ################################################################### -->
+	<br>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="card card-body h-100  border-info" id="profile-wrapper">
+					<img id="profile-pic" src="{% static 'images/ahmed.jpg' %}" >
+					<hr>
+					<h4>Ahmed Emad</h4>
+					<p>Cybersecurity Engineer | Red Teaming | Backend Developer</p>
+				</div>
+			</div>
+
+			<div class="col-md-9">
+				<div class="card card-body h-100  border-info">
+					<h4>About Me</h4>
+					<hr>
+					<p>I’m a passionate <strong>Cybersecurity Engineer</strong> specializing in <strong>Red Teaming</strong>, with a strong background in <strong>backend development using Django</strong>. I thrive on identifying vulnerabilities, enhancing security defenses, and building robust backend systems.</p>
+
+					<p>My expertise bridges <strong>offensive security</strong> and <strong>software development</strong>, allowing me to create secure and scalable applications. Always eager to learn and explore new technologies, I enjoy solving complex challenges and staying ahead in the ever-evolving tech landscape.</p>
+
+					<ul class="social-links">
+						<li><a href="https://www.linkedin.com/in/ahmed0emad/" target="_blank"><img class="social" src="{% static 'images/linkedin.png' %}"></a></li>
+						<li><a href="https://github.com/mellooz" target="_blank"><img class="social" src="{% static 'images/github.png' %}"></a></li>
+						<li><a href="mailto:anaahmed1512@gmail.com" target="_blank"><img class="social" src="{% static 'images/gmail.png' %}"></a></li>
+						<li><a href="https://wa.me/+201092247661" target="_blank"><img class="social" src="{% static 'images/whatsapp.png' %}"></a></li>
+						<li><a href="#" download target="_blank"><img class="social" src="{% static 'images/cv.png' %}"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="card card-body h-100">
+					<h5>Education</h5>
+					<hr>
+					<p><strong>Bachelor’s Degree in Computer Engineering</strong></p>
+					<p><strong>University:</strong> Zagazig University, Egypt</p>
+					<p><strong>Expected Graduation:</strong> July 2025</p>
+					</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="card card-body h-100">
+					<h5>Student Activities</h5>
+					<hr>
+					<p><strong>IEEE Zagazig Student Branch</strong> – Ambassador & Member (June 2022 – July 2023)</p>
+					<p><strong>AIESEC Zagazig</strong> – Team Leader OGV (August 2022 – January 2023)</p>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="card card-body h-100">
+					<h5>Skills & Courses</h5>
+					<hr>
+					<h6>Programming Languages:</h6>
+                        <p>Python, Java, C, Bash, JavaScript, HTML, CSS</p>
+					<h6>Tools & Technologies:</h6>
+                        <p>Docker, Git, GitHub, Postman, Burp Suite, SQLmap, Nmap, VirtualBox, Wireshark, Cisco Packet Tracer</p>
+					<h6>Databases:</h6>
+						<p>MySQL, PostgreSQL, MongoDB</p>
+					<h6>Courses:</h6>
+						<p>eJPT v1, Security+, Red Hat Admin 1, OWASP Top 10, CCNA</p>
+					<h6>Frameworks & Architectures:</h6>
+						<p>Django (MVT & REST API), JavaFX</p>
+					<h6>Languages:</h6>
+						<p>English (B2), German (B1.1) - Working towards C1</p>
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="card card-body h-100">
+					<h5>Work Experience</h5>
+				<hr>
+				<p><strong>IT Assistant (Part-Time)</strong></p>
+				<p><strong>Abdeldayem Group</strong> | July 2023 – February 2024</p>
+				<ul>
+					<li>Assisted in building and maintaining the group's network infrastructure.</li>
+					<li>Automated workflows using Google Apps Script.</li>
+					<li>Supported hardware and software troubleshooting.</li>
+				</ul>
+				</div>
+			</div>
+		</div>
+		<br>
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card card-body h-100">
+					<h5>Projects</h5>
+					<hr>
+					<ul>
+						<li><a class="nav-link" href="{% url 'base:ai-Workflow' %}"><strong>AI Workflow Platform</strong></a></li>
+						<br>
+						<li><a class="nav-link" href="{% url 'base:learn-hub' %}"><strong>LearnHub</strong></a></li>
+						<br>
+						<li><a class="nav-link" href="{% url 'base:job-boards' %}"><strong>Job Boards Website</strong></a></li>
+						<br>
+						<li><a class="nav-link" href="{% url 'base:cars-marketplace' %}"><strong>Car Marketplace</strong></a></li>
+						<br>
+						<li><a class="nav-link" href="{% url 'base:chat-app' %}"><strong>Chat App</strong></a></li>
+						<br>
+						<li><a class="nav-link" href="{% url 'base:e-commerce' %}"><strong>E-commerce Platform</strong></a></li>
+						<br>
+						<li><a class="nav-link" href="{% url 'base:mario' %}"><strong>Mario Game</strong></a></li>
+						<br>
+						<li><a class="nav-link" href="{% url 'base:networks' %}"><strong>Networking Projects (RIP, OSPF, VLAN)</strong></a></li>
+					</ul>
+			</div>
+		</div>
+		<br>
+	</div>
+
+</body>
+</html>

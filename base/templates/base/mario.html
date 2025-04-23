@@ -1,0 +1,80 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ahmed Emad</title>
+	<link href="{% static '/css/main.css'  %}" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+</head>
+<body>
+	<!-- ################################################################### -->
+
+	    {% include 'base/navbar.html' %}
+
+	<!-- ################################################################### -->
+<br>
+
+
+<div class="container">
+    <h2>Mario Game</h2>
+    <iframe width="100%" height="400" src="https://www.youtube.com/embed/6qQX0o8JlUA" frameborder="0" allowfullscreen></iframe>
+    <ul>
+        <li><strong>Framework:</strong> JavaFX</li>
+        <br>
+        <li><strong>Real-Time Animation:</strong> Used AnimationTimer for smooth animation</li>
+        <br>
+        <li><strong>Collision Detection:</strong> Custom-built collision detection logic</li>
+        <br>
+        <li><strong>Character Movement:</strong> Smooth character movement implemented</li>
+        <br>
+        <li><strong>Background Music:</strong> Integrated with MediaPlayer</li>
+        <br>
+        <li><strong>Game Scenes:</strong>
+            <br>
+          <ul>
+            <li>Start scene</li>
+            <br>
+            <li>Win scene</li>
+            <br>
+            <li>Game over scene</li>
+            <br>
+          </ul>
+        </li>
+        <br>
+        <li><strong>Game Features:</strong>
+            <br>
+          <ul>
+            <li>Moving obstacles</li>
+            <br>
+            <li>Gravity simulation</li>
+            <br>
+            <li>Win/lose conditions with reset functionality</li>
+            <br>
+          </ul>
+        </li>
+      </ul>
+    <h4>Technologies Used</h4>
+    <ul>
+        <li><strong>Game Engine:</strong> JavaFX</li>
+        <br>
+        <li><strong>Animation:</strong> AnimationTimer for real-time animation</li>
+        <br>
+        <li><strong>Collision Detection:</strong> Custom-built logic for detecting collisions</li>
+        <br>
+        <li><strong>Audio:</strong> MediaPlayer for background music</li>
+        <br>
+        <li><strong>Scenes:</strong> JavaFX scene management for start, win, and game over screens</li>
+        <br>
+        <li><strong>Game Mechanics:</strong> Gravity simulation and moving obstacles</li>
+        <br>
+        <li><strong>User Interface:</strong> Interactive UI with JavaFX</li>
+        <br>
+        <li><strong>Reset Functionality:</strong> Ability to restart the game after win/lose</li>
+      </ul>
+    <a href="https://github.com/mellooz/mario-game" class="btn btn-dark" target="_blank">View on GitHub</a>
+</div>
+<br>
+</body>
+</html>

@@ -1,0 +1,46 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ahmed Emad</title>
+	<link href="{% static '/css/main.css'  %}" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+</head>
+<body>
+	<!-- ################################################################### -->
+
+	    {% include 'base/navbar.html' %}
+
+	<!-- ################################################################### -->
+<br>
+
+
+<div class="container">
+    <h2>AI Workflow Platform</h2>
+    <h2><strong>AI Workflow Platform</strong></h2>
+
+<ul>
+  <li><strong>Platform Purpose:</strong> Contributed to a visual AI development platform where users can build complete AI models by connecting modular nodes (each representing an AI model or data operation) without writing code.</li>
+  <br>
+  <li><strong>Backend Architecture:</strong> Used Controller–Service–Repository architecture for a clean and scalable backend structure, with workflows running in the backend and returning results to users.</li>
+  <br>
+  <li><strong>Repository Layer:</strong> Focused on the Repository layer, implementing saving, loading, updating, and deleting node data, with file-based storage and database integration.</li>
+  <br>
+  <li><strong>Chatbot API:</strong> Built the chatbot API using Django Channels, enabling real-time interactions between users and the AI engine.</li>
+  <br>
+  <li><strong>Web Platform:</strong> Worked on the web platform allowing users to access tutorials, share projects, and browse community projects.</li>
+  <br>
+  <li><strong>Authentication & Authorization:</strong> Implemented authentication and authorization, including login, OTP-based password reset, and role-based access.</li>
+  <br>
+  <li><strong>Real-Time Collaboration:</strong> Enabled real-time chat rooms where messages are stored in the database, and users can collaborate in project-specific rooms.</li>
+</ul>
+
+    <h4>Technologies Used</h4>
+
+    <a href="https://github.com/MoNafea01/AI-NO" class="btn btn-dark" target="_blank">View on GitHub</a>
+</div>
+<br>
+</body>
+</html>

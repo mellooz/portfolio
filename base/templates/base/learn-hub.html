@@ -1,0 +1,51 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ahmed Emad</title>
+	<link href="{% static '/css/main.css'  %}" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+</head>
+<body>
+	<!-- ################################################################### -->
+
+	    {% include 'base/navbar.html' %}
+
+	<!-- ################################################################### -->
+<br>
+
+
+<div class="container">
+    <h2>LearnHub</h2>
+    <br>
+    <p>
+        <strong>LearnHub API</strong> is a backend service built with <strong>Django</strong> and designed to support an <strong>e-learning platform</strong> with
+        <strong>JWT</strong> and <strong>OTP-based authentication</strong>.
+      </p>
+      <p>
+        Users can:
+        <ul>
+          <li><strong>Enroll</strong> in courses</li>
+          <li><strong>Search</strong> for content</li>
+          <li><strong>Create</strong> and <strong>manage</strong> their own courses with lessons</li>
+          <li><strong>Track</strong> their activity via a personalized profile</li>
+        </ul>
+      </p>
+      <p>
+        The system ensures <strong>secure account verification</strong> and <strong>password reset</strong> through <em>email-based OTPs</em>.
+      </p>
+    <h4>Technologies Used</h4>
+    <ul>
+        <li><strong>Backend Framework:</strong> <code>Django</code></li>
+        <li><strong>API Format:</strong> <code>REST API</code></li>
+        <li><strong>Authentication:</strong> <code>JWT</code>, <code>OTP (Email-based)</code></li>
+        <li><strong>Database:</strong> <code>Sqlite3</code></li>
+        <li><strong>Email Services:</strong> <code>SMTP</code> for OTP verification and password reset</li>
+      </ul>
+    <a href="https://github.com/mellooz/LearnHub" class="btn btn-dark" target="_blank">View on GitHub</a>
+</div>
+
+</body>
+</html>
